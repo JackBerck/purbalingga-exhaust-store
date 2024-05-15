@@ -112,11 +112,34 @@
                 </li>
                 <li class="group flex items-center">
                   <div class="py-2 mx-8 flex gap-4">
-                    <button type="button ">
-                      <i
-                        class="fa-solid fa-circle-user text-2xl hover:text-primary"
-                      ></i>
-                    </button>
+                    <div class="relative">
+                      <button type="button" id="profile-button">
+                        <i
+                          class="fa-solid fa-circle-user text-2xl hover:text-primary"
+                        ></i>
+                      </button>
+                      <div
+                        id="profile-menu"
+                        class="hidden w-[100px] absolute px-4 py-2 bg-white shadow-lg rounded-lg top-full dark:bg-dark dark:shadow-slate-500 dark:shadow-sm"
+                      >
+                        <ul class="block">
+                          <li class="group">
+                            <a
+                              href="./sign-in.html"
+                              class="text-dark hover:text-primary py-2 text-sm dark:text-white"
+                              >Masuk</a
+                            >
+                          </li>
+                          <li class="group">
+                            <a
+                              href="./sign-up.html"
+                              class="text-dark py-2 text-sm hover:text-primary dark:text-white"
+                              >Daftar</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                     <button type="button">
                       <i
                         class="fa-solid fa-cart-shopping text-xl hover:text-primary"
@@ -155,18 +178,25 @@
               terjamin. Jangan lewatkan kesempatan untuk memperbarui kendaraan
               Anda. Yuk, belanja sekarang dan rasakan perbedaannya!
             </p>
-            <a
-              href="#contact-me"
-              class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-md hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
-              >Belanja Knalpot!</a
-            >
+            <div class="">
+              <a
+                href="#contact-me"
+                class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-md hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
+                >Belanja Knalpot!</a
+              >
+              <a
+                href="#contact-me"
+                class="text-base font-semibold text-primary border-primary border-solid border-2 py-3 px-8 rounded-md hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
+                >Jual Knalpot!</a
+              >
+            </div>
           </div>
         </div>
       </div>
     </section>
     <!-- Hero Section End -->
-    <!-- Services Section Start -->
-    <section id="services" class="pt-14 pb-16 bg-slate-100 dark:bg-slate-800">
+    <!-- Feature Section Start -->
+    <section id="feature" class="pt-10 pb-4 bg-slate-100 dark:bg-slate-800">
       <div class="container">
         <div class="w-full px-4">
           <div class="max-w-xl mb-6 m-auto text-center">
@@ -186,12 +216,12 @@
             </p>
           </div>
           <div class="max-w-full px-4 flex flex-wrap justify-center">
-            <div class="mb-12 p-4 md:w-1/2 lg:w-1/3">
+            <div class="mb-12 p-4 md:w-1/3 lg:w-1/4">
               <div
                 class="rounded-2xl shadow-sm overflow-hidden border-2 border-primary p-2 dark:bg-dark"
               >
                 <img
-                  src="./src/img/branding/produk-terpopuler.png"
+                  src="./src/img/branding/toko-resmi.png"
                   alt="Random Photo"
                   class="m-auto max-w-[80px] w-full"
                 />
@@ -210,12 +240,12 @@
                 </div>
               </div>
             </div>
-            <div class="mb-12 p-4 md:w-1/2 lg:w-1/3">
+            <div class="mb-12 p-4 md:w-1/3 lg:w-1/4">
               <div
                 class="rounded-2xl shadow-sm overflow-hidden border-2 border-primary p-2 dark:bg-dark"
               >
                 <img
-                  src="./src/img/branding/toko-resmi.png"
+                  src="./src/img/branding/produk-terpopuler.png"
                   alt="Random Photo"
                   class="m-auto max-w-[80px] w-full"
                 />
@@ -234,7 +264,7 @@
                 </div>
               </div>
             </div>
-            <div class="mb-12 p-4 md:w-1/2 lg:w-1/3">
+            <div class="mb-12 p-4 md:w-1/3 lg:w-1/4">
               <div
                 class="rounded-2xl shadow-sm overflow-hidden border-2 border-primary p-2 dark:bg-dark"
               >
@@ -263,9 +293,80 @@
         </div>
       </div>
     </section>
-    <!-- Services Section End -->
-    <!-- Case Studies Section Start -->
-    <section id="case-studies" class="pt-36 pb-32 dark:bg-dark">
+    <!-- Feature Section End -->
+    <!-- Official Store Section Start -->
+    <section id="products" class="pt-16 pb-16 dark:bg-dark">
+      <div class="container">
+        <div class="w-full px-4 mb-6 flex justify-between flex-col md:flex-row">
+          <div class="max-w-xl">
+            <h4 class="font-semibold text-primary mb-2 text-md">
+              Gass Njajan Knalpot 🤑
+            </h4>
+            <h2
+              class="font-bold text-dark text-3xl mb-4 m:text-4xl lg:text-xl dark:text-white"
+            >
+              Temukan beragam produk terpopuler di Purbalingga Exhaust Store
+            </h2>
+          </div>
+          <div class="text-sm">
+            <a href="#" class="hover:text-primary">Lihat selengkapnya →</a>
+          </div>
+        </div>
+        <div class="flex flex-wrap justify-center">
+          <div class="w-1/2 px-4 md:w-1/3 lg:w-1/4 xl:w-1/5">
+            <div
+              class="bg-white w-24 m-auto rounded-xl overflow-hidden shadow-sm mb-10 dark:bg-slate-800 md:w-32"
+            >
+              <a href="#">
+                <img
+                  src="./src/img/official-store/suzuki.png"
+                  alt="Product"
+                  class="w-full grayscale hover:grayscale-0 transition duration-300"
+              /></a>
+            </div>
+          </div>
+          <div class="w-1/2 px-4 md:w-1/3 lg:w-1/4 xl:w-1/5">
+            <div
+              class="bg-white w-24 m-auto rounded-xl overflow-hidden shadow-sm mb-10 dark:bg-slate-800 md:w-32"
+            >
+              <a href="#">
+                <img
+                  src="./src/img/official-store/honda.png"
+                  alt="Product"
+                  class="w-full grayscale hover:grayscale-0 transition duration-300"
+              /></a>
+            </div>
+          </div>
+          <div class="w-1/2 px-4 md:w-1/3 lg:w-1/4 xl:w-1/5">
+            <div
+              class="bg-white w-24 m-auto rounded-xl overflow-hidden shadow-sm mb-10 dark:bg-slate-800 md:w-32"
+            >
+              <a href="#">
+                <img
+                  src="./src/img/official-store/mercedes.png"
+                  alt="Product"
+                  class="w-full grayscale hover:grayscale-0 transition duration-300"
+              /></a>
+            </div>
+          </div>
+          <div class="w-1/2 px-4 md:w-1/3 lg:w-1/4 xl:w-1/5">
+            <div
+              class="bg-white w-24 m-auto rounded-xl overflow-hidden shadow-sm mb-10 dark:bg-slate-800 md:w-32"
+            >
+              <a href="#">
+                <img
+                  src="./src/img/official-store/tesla.png"
+                  alt="Product"
+                  class="w-full grayscale hover:grayscale-0 transition duration-300"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Official Store Section End -->
+    <!-- Products Section Start -->
+    <section id="products" class="pt-16 pb-16 dark:bg-dark">
       <div class="container">
         <div class="w-full px-4">
           <div class="max-w-xl mb-6">
@@ -285,7 +386,7 @@
               class="bg-white rounded-xl overflow-hidden shadow-sm mb-10 dark:bg-slate-800"
             >
               <img
-                src="./src/img/products/coming_soon.png"
+                src="./src/img/products/knalpot2.jpg"
                 alt="Product"
                 class="w-full"
               />
@@ -293,12 +394,12 @@
                 <h3>
                   <a
                     href="#"
-                    class="block mb-3 font-semibold text-dark text-xl hover:text-secondary truncate dark:text-white transition duration-100 dark:hover:text-slate-300"
+                    class="block mb-3 font-semibold text-dark text-md hover:text-secondary truncate dark:text-white transition duration-100 dark:hover:text-slate-300"
                     >Lorem, ipsum dolor.</a
                   >
                 </h3>
                 <p
-                  class="font-medium text-base text-secondary mb-4 dark:text-slate-400 product-description"
+                  class="font-medium text-xs text-secondary mb-4 dark:text-slate-400 product-description"
                 >
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Optio, sit. Lorem ipsum dolor sit amet consectetur adipisicing
@@ -317,7 +418,7 @@
               class="bg-white rounded-xl overflow-hidden shadow-sm mb-10 dark:bg-slate-800"
             >
               <img
-                src="./src/img/products/coming_soon.png"
+                src="./src/img/products/knalpot3.jpg"
                 alt="Product"
                 class="w-full"
               />
@@ -325,12 +426,12 @@
                 <h3>
                   <a
                     href="#"
-                    class="block mb-3 font-semibold text-dark text-xl hover:text-secondary truncate dark:text-white transition duration-100 dark:hover:text-slate-300"
+                    class="block mb-3 font-semibold text-dark text-md hover:text-secondary truncate dark:text-white transition duration-100 dark:hover:text-slate-300"
                     >Lorem, ipsum dolor.</a
                   >
                 </h3>
                 <p
-                  class="font-medium text-base text-secondary mb-4 dark:text-slate-400 product-description"
+                  class="font-medium text-xs text-secondary mb-4 dark:text-slate-400 product-description"
                 >
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Optio, sit. Lorem ipsum dolor sit amet consectetur adipisicing
@@ -338,7 +439,7 @@
                 </p>
                 <a
                   href="#"
-                  class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80 transition duration-100"
+                  class="font-medium text-xs text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80 transition duration-100"
                   >Cek Barang →</a
                 >
               </div>
@@ -349,7 +450,7 @@
               class="bg-white rounded-xl overflow-hidden shadow-sm mb-10 dark:bg-slate-800"
             >
               <img
-                src="./src/img/products/coming_soon.png"
+                src="./src/img/products/knalpot4.jpg"
                 alt="Product"
                 class="w-full"
               />
@@ -357,12 +458,12 @@
                 <h3>
                   <a
                     href="#"
-                    class="block mb-3 font-semibold text-dark text-xl hover:text-secondary truncate dark:text-white transition duration-100 dark:hover:text-slate-300"
+                    class="block mb-3 font-semibold text-dark text-md hover:text-secondary truncate dark:text-white transition duration-100 dark:hover:text-slate-300"
                     >Lorem, ipsum dolor.</a
                   >
                 </h3>
                 <p
-                  class="font-medium text-base text-secondary mb-4 dark:text-slate-400 product-description"
+                  class="font-medium text-xs text-secondary mb-4 dark:text-slate-400 product-description"
                 >
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Optio, sit. Lorem ipsum dolor sit amet consectetur adipisicing
@@ -370,7 +471,7 @@
                 </p>
                 <a
                   href="#"
-                  class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80 transition duration-100"
+                  class="font-medium text-xs text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80 transition duration-100"
                   >Cek Barang →</a
                 >
               </div>
@@ -381,7 +482,7 @@
               class="bg-white rounded-xl overflow-hidden shadow-sm mb-10 dark:bg-slate-800"
             >
               <img
-                src="./src/img/products/coming_soon.png"
+                src="./src/img/products/knalpot8.jpg"
                 alt="Product"
                 class="w-full"
               />
@@ -389,12 +490,12 @@
                 <h3>
                   <a
                     href="#"
-                    class="block mb-3 font-semibold text-dark text-xl hover:text-secondary truncate dark:text-white transition duration-100 dark:hover:text-slate-300"
+                    class="block mb-3 font-semibold text-dark text-md hover:text-secondary truncate dark:text-white transition duration-100 dark:hover:text-slate-300"
                     >Lorem, ipsum dolor.</a
                   >
                 </h3>
                 <p
-                  class="font-medium text-base text-secondary mb-4 dark:text-slate-400 product-description"
+                  class="font-medium text-xs text-secondary mb-4 dark:text-slate-400 product-description"
                 >
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Optio, sit. Lorem ipsum dolor sit amet consectetur adipisicing
@@ -402,7 +503,7 @@
                 </p>
                 <a
                   href="#"
-                  class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80 transition duration-100"
+                  class="font-medium text-xs text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80 transition duration-100"
                   >Cek Barang →</a
                 >
               </div>
@@ -413,7 +514,7 @@
               class="bg-white rounded-xl overflow-hidden shadow-sm mb-10 dark:bg-slate-800"
             >
               <img
-                src="./src/img/products/coming_soon.png"
+                src="./src/img/products/knalpot10.jpg"
                 alt="Product"
                 class="w-full"
               />
@@ -421,12 +522,12 @@
                 <h3>
                   <a
                     href="#"
-                    class="block mb-3 font-semibold text-dark text-xl hover:text-secondary truncate dark:text-white transition duration-100 dark:hover:text-slate-300"
+                    class="block mb-3 font-semibold text-dark text-md hover:text-secondary truncate dark:text-white transition duration-100 dark:hover:text-slate-300"
                     >Lorem, ipsum dolor.</a
                   >
                 </h3>
                 <p
-                  class="font-medium text-base text-secondary mb-4 dark:text-slate-400 product-description"
+                  class="font-medium text-xs text-secondary mb-4 dark:text-slate-400 product-description"
                 >
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Optio, sit. Lorem ipsum dolor sit amet consectetur adipisicing
@@ -434,7 +535,7 @@
                 </p>
                 <a
                   href="#"
-                  class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80 transition duration-100"
+                  class="font-medium text-xs text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80 transition duration-100"
                   >Cek Barang →</a
                 >
               </div>
@@ -445,7 +546,7 @@
               class="bg-white rounded-xl overflow-hidden shadow-sm mb-10 dark:bg-slate-800"
             >
               <img
-                src="./src/img/products/coming_soon.png"
+                src="./src/img/products/knalpot11.jpg"
                 alt="Product"
                 class="w-full"
               />
@@ -453,12 +554,12 @@
                 <h3>
                   <a
                     href="#"
-                    class="block mb-3 font-semibold text-dark text-xl hover:text-secondary truncate dark:text-white transition duration-100 dark:hover:text-slate-300"
+                    class="block mb-3 font-semibold text-dark text-md hover:text-secondary truncate dark:text-white transition duration-100 dark:hover:text-slate-300"
                     >Lorem, ipsum dolor.</a
                   >
                 </h3>
                 <p
-                  class="font-medium text-base text-secondary mb-4 dark:text-slate-400 product-description"
+                  class="font-medium text-xs text-secondary mb-4 dark:text-slate-400 product-description"
                 >
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Optio, sit. Lorem ipsum dolor sit amet consectetur adipisicing
@@ -466,7 +567,7 @@
                 </p>
                 <a
                   href="#"
-                  class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80 transition duration-100"
+                  class="font-medium text-xs text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80 transition duration-100"
                   >Cek Barang →</a
                 >
               </div>
@@ -477,7 +578,7 @@
               class="bg-white rounded-xl overflow-hidden shadow-sm mb-10 dark:bg-slate-800"
             >
               <img
-                src="./src/img/products/coming_soon.png"
+                src="./src/img/products/knalpot12.jpg"
                 alt="Product"
                 class="w-full"
               />
@@ -485,12 +586,12 @@
                 <h3>
                   <a
                     href="#"
-                    class="block mb-3 font-semibold text-dark text-xl hover:text-secondary truncate dark:text-white transition duration-100 dark:hover:text-slate-300"
+                    class="block mb-3 font-semibold text-dark text-md hover:text-secondary truncate dark:text-white transition duration-100 dark:hover:text-slate-300"
                     >Lorem, ipsum dolor.</a
                   >
                 </h3>
                 <p
-                  class="font-medium text-base text-secondary mb-4 dark:text-slate-400 product-description"
+                  class="font-medium text-xs text-secondary mb-4 dark:text-slate-400 product-description"
                 >
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Optio, sit. Lorem ipsum dolor sit amet consectetur adipisicing
@@ -498,103 +599,7 @@
                 </p>
                 <a
                   href="#"
-                  class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80 transition duration-100"
-                  >Cek Barang →</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="w-1/2 px-4 md:w-1/3 lg:w-1/4 xl:w-1/5">
-            <div
-              class="bg-white rounded-xl overflow-hidden shadow-sm mb-10 dark:bg-slate-800"
-            >
-              <img
-                src="./src/img/products/coming_soon.png"
-                alt="Product"
-                class="w-full"
-              />
-              <div class="py-8 px-6">
-                <h3>
-                  <a
-                    href="#"
-                    class="block mb-3 font-semibold text-dark text-xl hover:text-secondary truncate dark:text-white transition duration-100 dark:hover:text-slate-300"
-                    >Lorem, ipsum dolor.</a
-                  >
-                </h3>
-                <p
-                  class="font-medium text-base text-secondary mb-4 dark:text-slate-400 product-description"
-                >
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Optio, sit. Lorem ipsum dolor sit amet consectetur adipisicing
-                  elit. Accusamus, saepe?
-                </p>
-                <a
-                  href="#"
-                  class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80 transition duration-100"
-                  >Cek Barang →</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="w-1/2 px-4 md:w-1/3 lg:w-1/4 xl:w-1/5">
-            <div
-              class="bg-white rounded-xl overflow-hidden shadow-sm mb-10 dark:bg-slate-800"
-            >
-              <img
-                src="./src/img/products/coming_soon.png"
-                alt="Product"
-                class="w-full"
-              />
-              <div class="py-8 px-6">
-                <h3>
-                  <a
-                    href="#"
-                    class="block mb-3 font-semibold text-dark text-xl hover:text-secondary truncate dark:text-white transition duration-100 dark:hover:text-slate-300"
-                    >Lorem, ipsum dolor.</a
-                  >
-                </h3>
-                <p
-                  class="font-medium text-base text-secondary mb-4 dark:text-slate-400 product-description"
-                >
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Optio, sit. Lorem ipsum dolor sit amet consectetur adipisicing
-                  elit. Accusamus, saepe?
-                </p>
-                <a
-                  href="#"
-                  class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80 transition duration-100"
-                  >Cek Barang →</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="w-1/2 px-4 md:w-1/3 lg:w-1/4 xl:w-1/5">
-            <div
-              class="bg-white rounded-xl overflow-hidden shadow-sm mb-10 dark:bg-slate-800"
-            >
-              <img
-                src="./src/img/products/coming_soon.png"
-                alt="Product"
-                class="w-full"
-              />
-              <div class="py-8 px-6">
-                <h3>
-                  <a
-                    href="#"
-                    class="block mb-3 font-semibold text-dark text-xl hover:text-secondary truncate dark:text-white transition duration-100 dark:hover:text-slate-300"
-                    >Lorem, ipsum dolor.</a
-                  >
-                </h3>
-                <p
-                  class="font-medium text-base text-secondary mb-4 dark:text-slate-400 product-description"
-                >
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Optio, sit. Lorem ipsum dolor sit amet consectetur adipisicing
-                  elit. Accusamus, saepe?
-                </p>
-                <a
-                  href="#"
-                  class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80 transition duration-100"
+                  class="font-medium text-xs text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80 transition duration-100"
                   >Cek Barang →</a
                 >
               </div>
@@ -603,7 +608,7 @@
         </div>
       </div>
     </section>
-    <!-- Case Studies Section End -->
+    <!-- Products Section End -->
     <!-- Footer Section Start -->
     <footer class="bg-dark pt-24 pb-12">
       <div class="container">
