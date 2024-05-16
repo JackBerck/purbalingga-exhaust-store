@@ -8,6 +8,9 @@ module.exports = {
       padding: "16px",
     },
     extend: {
+      fontSize: {
+        xxs: "0.6rem",
+      },
       colors: {
         primary: "#9370DB",
         secondary: "#64748b",
