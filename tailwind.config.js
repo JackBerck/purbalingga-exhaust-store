@@ -23,9 +23,11 @@ module.exports = {
         kodemono: '"Kode Mono"',
         poppins: '"Poppins"',
       },
-      backgroundImage: {
+      backgroundImage: (theme) => ({
         header: "url('/src/img/header.png')",
-      },
+        signUp: "url('/src/img/login-sign-up/sign-up.png')",
+        signIn: "url('/src/img/login-sign-up/sign-in.png')",
+      }),
     },
   },
   plugins: [],
