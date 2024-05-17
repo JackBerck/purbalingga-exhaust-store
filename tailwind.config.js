@@ -24,9 +24,9 @@ module.exports = {
         poppins: '"Poppins"',
       },
       backgroundImage: {
-        header: "url('./src/img/header.png')",
-        signUp: "url('./src/img/login-sign-up/sign-up.png')",
-        signIn: "url('./src/img/login-sign-up/sign-in.png')",
+        header: "url('../img/header.png')",
+        signUp: "url('../img/login-sign-up/sign-up.png')",
+        signIn: "url('../img/login-sign-up/sign-in.png')",
       },
     },
   },

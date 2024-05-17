@@ -1014,15 +1014,15 @@ video {
 }
 
 .bg-header {
-  background-image: url('./src/img/header.png');
+  background-image: url('../img/header.png');
 }
 
 .bg-signIn {
-  background-image: url('./src/img/login-sign-up/sign-in.png');
+  background-image: url('../img/login-sign-up/sign-in.png');
 }
 
 .bg-signUp {
-  background-image: url('./src/img/login-sign-up/sign-up.png');
+  background-image: url('../img/login-sign-up/sign-up.png');
 }
 
 .bg-cover {
