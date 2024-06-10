@@ -13,13 +13,15 @@ window.onscroll = function () {
   const fixedNav = header.offsetTop;
 
   if (window.scrollY > fixedNav) {
+    if (header.classList.contains("absolute")) {
+      header.classList.remove("absolute");
+    }
     header.classList.add("navbar-fixed");
-    toTop.classList.remove("hidden");
-    toTop.classList.add("flex");
   } else {
+    if (!header.classList.contains("absolute")) {
+      header.classList.add("absolute");
+    }
     header.classList.remove("navbar-fixed");
-    toTop.classList.remove("flex");
-    toTop.classList.add("hidden");
   }
 };
 

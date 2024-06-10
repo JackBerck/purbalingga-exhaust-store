@@ -18,6 +18,7 @@ module.exports = {
       },
       screens: {
         "2xl": "1320px",
+        xs: "360px",
       },
       fontFamily: {
         kodemono: '"Kode Mono"',
