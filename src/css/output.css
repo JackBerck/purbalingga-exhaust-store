@@ -690,10 +690,6 @@ video {
   z-index: 999;
 }
 
-.-z-10 {
-  z-index: -10;
-}
-
 .m-auto {
   margin: auto;
 }
@@ -711,6 +707,11 @@ video {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-1 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
 }
 
 .my-4 {
@@ -774,12 +775,12 @@ video {
   margin-top: 0.25rem;
 }
 
-.mt-16 {
-  margin-top: 4rem;
-}
-
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
 }
 
 .mt-3 {
@@ -796,26 +797,6 @@ video {
 
 .mt-6 {
   margin-top: 1.5rem;
-}
-
-.mt-20 {
-  margin-top: 5rem;
-}
-
-.mt-24 {
-  margin-top: 6rem;
-}
-
-.mt-28 {
-  margin-top: 7rem;
-}
-
-.mt-32 {
-  margin-top: 8rem;
-}
-
-.mt-40 {
-  margin-top: 10rem;
 }
 
 .block {
@@ -1387,11 +1368,6 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 
 .pb-1 {
@@ -2265,6 +2241,16 @@ body {
   .xs\:w-1\/2 {
     width: 50%;
   }
+
+  .xs\:px-1 {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+
+  .xs\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
 @media (min-width: 640px) {
@@ -2296,6 +2282,10 @@ body {
     height: 12rem;
   }
 
+  .sm\:w-1\/3 {
+    width: 33.333333%;
+  }
+
   .sm\:w-40 {
     width: 10rem;
   }
@@ -2310,6 +2300,10 @@ body {
 
   .sm\:justify-between {
     justify-content: space-between;
+  }
+
+  .sm\:gap-1 {
+    gap: 0.25rem;
   }
 
   .sm\:space-x-6 > :not([hidden]) ~ :not([hidden]) {
@@ -2329,6 +2323,11 @@ body {
     padding-right: 1.5rem;
   }
 
+  .sm\:px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
   .sm\:text-center {
     text-align: center;
   }
@@ -2336,12 +2335,6 @@ body {
   .sm\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
-  }
-
-  .sm\:shadow-none {
-    --tw-shadow: 0 0 #0000;
-    --tw-shadow-colored: 0 0 #0000;
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
 }
 
@@ -2401,6 +2394,10 @@ body {
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:gap-1 {
+    gap: 0.25rem;
   }
 
   .md\:space-x-6 > :not([hidden]) ~ :not([hidden]) {
@@ -2546,6 +2543,11 @@ body {
   .lg\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
+  }
+
+  .lg\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   .lg\:text-white {
