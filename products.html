@@ -292,8 +292,50 @@
             Temukan beragam produk terpopuler di Purbalingga Exhaust Store
           </h2>
         </div>
-        <div class="text-sm">
-          <a href="#" class="hover:text-primary">Lihat selengkapnya →</a>
+        <div class="max-w-screen-md">
+          <div class="rounded-xl p-6">
+            <div
+              class="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+            >
+              <div class="flex flex-col">
+                <label for="name" class="text-stone-600 text-sm font-medium"
+                  >Nama</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Knalpot Racing"
+                  class="mt-2 block w-full rounded-md border border-gray-200 px-2 py-2 shadow-sm outline-none focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+                />
+              </div>
+              <div class="flex flex-col">
+                <label for="status" class="text-stone-600 text-sm font-medium"
+                  >Kondisi</label
+                >
+                <select
+                  id="status"
+                  class="mt-2 block w-full rounded-md border border-gray-200 px-2 py-2 shadow-sm outline-none focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+                >
+                  <option>Baru</option>
+                  <option>Second</option>
+                  <option>Branded</option>
+                </select>
+              </div>
+              <div class="flex flex-col">
+                <label for="status" class="text-stone-600 text-sm font-medium"
+                  >Kisaran harga</label
+                >
+                <select
+                  id="status"
+                  class="mt-2 block w-full rounded-md border border-gray-200 px-2 py-2 shadow-sm outline-none focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+                >
+                  <option>Rp100.000 - Rp500.000</option>
+                  <option>Rp500.000 - Rp1.500.000</option>
+                  <option>> Rp1.500.000</option>
+                </select>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="flex flex-wrap justify-center md:gap-1">

@@ -19,7 +19,7 @@
       src="https://kit.fontawesome.com/58c64c66db.js"
       crossorigin="anonymous"
     ></script>
-    <title>Keranjang | Lapak Knalpot</title>
+    <title>Checkout | Lapak Knalpot</title>
   </head>
   <body class="font-poppins">
     <!-- Header Section Start -->
@@ -54,27 +54,27 @@
             </button>
             <nav
               id="nav-menu"
-              class="hidden absolute py-5 bg-white shadow-lg rounded-lg w-full right-0 left-0 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark dark:shadow-slate-500 dark:shadow-sm lg:dark:bg-transparent lg:dark:shadow-none"
+              class="hidden absolute py-5 bg-white shadow-lg rounded-lg w-full right-0 left-0 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
             >
               <ul class="block lg:flex">
                 <li class="group flex items-center">
                   <a
                     href="./index.html#hero"
-                    class="flex text-dark py-2 mx-8 text-sm group-hover:text-primary dark:text-white"
+                    class="flex text-dark py-2 mx-8 text-sm group-hover:text-primary"
                     >Beranda</a
                   >
                 </li>
                 <li class="group flex items-center">
                   <a
                     href="./products.html"
-                    class="flex text-dark py-2 mx-8 text-sm group-hover:text-primary dark:text-white"
+                    class="flex text-dark py-2 mx-8 text-sm group-hover:text-primary"
                     >Cari Knalpot</a
                   >
                 </li>
                 <li class="group flex items-center">
                   <a
                     href="./help-and-support.html"
-                    class="flex text-dark py-2 mx-8 text-sm group-hover:text-primary dark:text-white"
+                    class="flex text-dark py-2 mx-8 text-sm group-hover:text-primary"
                     >Bantuan dan Dukungan</a
                   >
                 </li>
@@ -113,20 +113,20 @@
                       </button>
                       <div
                         id="profile-menu"
-                        class="hidden w-[100px] absolute px-4 py-2 bg-white shadow-lg rounded-lg top-full dark:bg-dark dark:shadow-slate-500 dark:shadow-sm"
+                        class="hidden w-[100px] absolute px-4 py-2 bg-white shadow-lg rounded-lg top-full"
                       >
                         <ul class="block">
                           <li class="group">
                             <a
                               href="./sign-in.html"
-                              class="text-dark hover:text-primary py-2 text-sm dark:text-white"
+                              class="text-dark hover:text-primary py-2 text-sm"
                               >Masuk</a
                             >
                           </li>
                           <li class="group">
                             <a
                               href="./sign-up.html"
-                              class="text-dark py-2 text-sm hover:text-primary dark:text-white"
+                              class="text-dark py-2 text-sm hover:text-primary"
                               >Daftar</a
                             >
                           </li>
@@ -134,9 +134,11 @@
                       </div>
                     </div>
                     <button type="button">
-                      <i
-                        class="fa-solid fa-cart-shopping text-xl hover:text-primary"
-                      ></i>
+                      <a href="./cart.html">
+                        <i
+                          class="fa-solid fa-cart-shopping text-xl hover:text-primary"
+                        ></i>
+                      </a>
                     </button>
                   </div>
                 </li>
@@ -147,158 +149,173 @@
       </div>
     </header>
     <!-- Header Section End -->
-    <!-- Comment Seciton Start -->
-    <section id="cart" class="pt-32 pb-16 bg-slate-100 dark:bg-slate-800">
+    <!-- Checkout Section Start -->
+    <div id="checkout" class="pt-16 pb-16">
       <div class="container">
-        <div class="w-full px-4">
-          <h1 class="mb-10 text-center text-2xl font-bold">
-            Keranjang Belanja
-          </h1>
-          <div
-            class="mx-auto max-w-5xl justify-center px-6 md:flex md:space-x-6 xl:px-0"
-          >
-            <div class="rounded-lg md:w-2/3">
-              <div
-                class="justify-between mb-6 rounded-lg bg-white p-6 shadow-md sm:flex sm:justify-start"
-              >
-                <img
-                  src="./src/img/products/knalpot10.jpg"
-                  alt="product-image"
-                  class="w-full rounded-lg sm:w-40"
-                />
-                <div class="sm:ml-4 sm:flex sm:w-full sm:justify-between">
-                  <div class="mt-5 sm:mt-0">
-                    <h2 class="text-lg font-bold text-gray-900">
-                      Knalpot Racing Bajaj Pro
-                    </h2>
+        <div class="max-w-4xl mx-auto">
+          <div class="text-center">
+            <h2
+              class="text-3xl font-extrabold text-gray-800 inline-block border-b-[3px] border-gray-800 pb-2 pt-8"
+            >
+              Checkout
+            </h2>
+          </div>
+          <div class="mt-12">
+            <div class="grid md:grid-cols-3 gap-4">
+              <div>
+                <h3 class="text-3xl font-bold text-gray-300">01</h3>
+                <h3 class="text-xl font-bold text-gray-800 mt-1">
+                  Informasi Pribadi
+                </h3>
+              </div>
+
+              <div class="md:col-span-2">
+                <form>
+                  <div class="grid sm:grid-cols-2 gap-4">
+                    <input
+                      type="text"
+                      placeholder="Nama depan"
+                      class="px-4 py-3 bg-white text-gray-800 w-full text-sm border-2 rounded-md focus:border-blue-500 outline-none"
+                    />
+                    <input
+                      type="text"
+                      placeholder="Nama belakang"
+                      class="px-4 py-3 bg-white text-gray-800 w-full text-sm border-2 rounded-md focus:border-blue-500 outline-none"
+                    />
+                    <input
+                      type="email"
+                      placeholder="Alamat email"
+                      class="px-4 py-3 bg-white text-gray-800 w-full text-sm border-2 rounded-md focus:border-blue-500 outline-none"
+                    />
+                    <input
+                      type="number"
+                      placeholder="Nomor telepon"
+                      class="px-4 py-3 bg-white text-gray-800 w-full text-sm border-2 rounded-md focus:border-blue-500 outline-none"
+                    />
                   </div>
-                  <div
-                    class="mt-4 flex justify-between sm:space-y-6 sm:mt-0 sm:block sm:space-x-6"
-                  >
-                    <div class="flex items-center border-gray-100">
-                      <span
-                        class="cursor-pointer rounded-l bg-gray-100 py-1 px-3.5 duration-100 hover:bg-blue-500 hover:text-blue-50"
-                      >
-                        -
-                      </span>
-                      <input
-                        class="h-8 w-8 border bg-white text-center text-xs outline-none"
-                        type="number"
-                        value="2"
-                        min="1"
+                </form>
+              </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-4 mt-12">
+              <div>
+                <h3 class="text-3xl font-bold text-gray-300">02</h3>
+                <h3 class="text-xl font-bold text-gray-800 mt-1">
+                  Alamat Lengkap
+                </h3>
+              </div>
+
+              <div class="md:col-span-2">
+                <form>
+                  <div class="grid sm:grid-cols-2 gap-4">
+                    <input
+                      type="text"
+                      placeholder="Alamat jalan"
+                      class="px-4 py-3 bg-white text-gray-800 w-full text-sm border-2 rounded-md focus:border-blue-500 outline-none"
+                    />
+                    <input
+                      type="text"
+                      placeholder="Kota/kabupaten"
+                      class="px-4 py-3 bg-white text-gray-800 w-full text-sm border-2 rounded-md focus:border-blue-500 outline-none"
+                    />
+                    <input
+                      type="text"
+                      placeholder="Provinsi"
+                      class="px-4 py-3 bg-white text-gray-800 w-full text-sm border-2 rounded-md focus:border-blue-500 outline-none"
+                    />
+                    <input
+                      type="number"
+                      placeholder="Kode pos"
+                      class="px-4 py-3 bg-white text-gray-800 w-full text-sm border-2 rounded-md focus:border-blue-500 outline-none"
+                    />
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-4 mt-12">
+              <div>
+                <h3 class="text-3xl font-bold text-gray-300">03</h3>
+                <h3 class="text-xl font-bold text-gray-800 mt-1">
+                  Metode Pembayaran
+                </h3>
+              </div>
+
+              <div class="md:col-span-2">
+                <div class="grid gap-4 sm:grid-cols-2">
+                  <div class="flex items-center">
+                    <input
+                      type="radio"
+                      class="w-5 h-5 cursor-pointer"
+                      id="card"
+                      checked
+                    />
+                    <label for="card" class="ml-4 flex gap-2 cursor-pointer">
+                      <img
+                        src="https://readymadeui.com/images/visa.webp"
+                        class="w-12"
+                        alt="card1"
                       />
-                      <span
-                        class="cursor-pointer rounded-r bg-gray-100 py-1 px-3 duration-100 hover:bg-blue-500 hover:text-blue-50"
-                      >
-                        +
-                      </span>
-                    </div>
-                    <div class="flex items-center space-x-4">
-                      <p class="text-sm">Rp750.000</p>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="h-5 w-5 cursor-pointer duration-150 hover:text-red-500"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M6 18L18 6M6 6l12 12"
-                        />
-                      </svg>
-                    </div>
+                      <img
+                        src="https://readymadeui.com/images/american-express.webp"
+                        class="w-12"
+                        alt="card2"
+                      />
+                      <img
+                        src="https://readymadeui.com/images/master.webp"
+                        class="w-12"
+                        alt="card3"
+                      />
+                    </label>
+                  </div>
+
+                  <div class="flex items-center">
+                    <input
+                      type="radio"
+                      class="w-5 h-5 cursor-pointer"
+                      id="paypal"
+                    />
+                    <label for="paypal" class="ml-4 flex gap-2 cursor-pointer">
+                      <img
+                        src="https://readymadeui.com/images/paypal.webp"
+                        class="w-20"
+                        alt="paypalCard"
+                      />
+                    </label>
                   </div>
                 </div>
-              </div>
-              <div
-                class="justify-between mb-6 rounded-lg bg-white p-6 shadow-md sm:flex sm:justify-start"
-              >
-                <img
-                  src="./src/img/products/knalpot11.jpg"
-                  alt="product-image"
-                  class="w-full rounded-lg sm:w-40"
-                />
-                <div class="sm:ml-4 sm:flex sm:w-full sm:justify-between">
-                  <div class="mt-5 sm:mt-0">
-                    <h2 class="text-lg font-bold text-gray-900">
-                      Knalpot RX King Sport
-                    </h2>
-                  </div>
-                  <div
-                    class="mt-4 flex justify-between im sm:space-y-6 sm:mt-0 sm:block sm:space-x-6"
-                  >
-                    <div class="flex items-center border-gray-100">
-                      <span
-                        class="cursor-pointer rounded-l bg-gray-100 py-1 px-3.5 duration-100 hover:bg-blue-500 hover:text-blue-50"
-                      >
-                        -
-                      </span>
-                      <input
-                        class="h-8 w-8 border bg-white text-center text-xs outline-none"
-                        type="number"
-                        value="2"
-                        min="1"
-                      />
-                      <span
-                        class="cursor-pointer rounded-r bg-gray-100 py-1 px-3 duration-100 hover:bg-blue-500 hover:text-blue-50"
-                      >
-                        +
-                      </span>
-                    </div>
-                    <div class="flex items-center space-x-4">
-                      <p class="text-sm">Rp650.000</p>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="h-5 w-5 cursor-pointer duration-150 hover:text-red-500"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M6 18L18 6M6 6l12 12"
-                        />
-                      </svg>
-                    </div>
+
+                <div class="grid sm:grid-cols-4 gap-4 mt-4">
+                  <div class="col-span-2">
+                    <input
+                      type="number"
+                      placeholder="Nomor kartu"
+                      class="px-4 py-3 bg-white text-gray-800 w-full text-sm border-2 rounded-md focus:border-blue-500 outline-none"
+                    />
                   </div>
                 </div>
               </div>
             </div>
-            <!-- Sub total -->
-            <div
-              class="mt-6 h-full rounded-lg border bg-white p-6 shadow-md md:mt-0 md:w-1/3"
-            >
-              <div class="mb-2 flex justify-between">
-                <p class="text-gray-700">Subtotal</p>
-                <p class="text-gray-700">Rp1.400.000</p>
-              </div>
-              <div class="flex justify-between">
-                <p class="text-gray-700">Ongkos kirim</p>
-                <p class="text-gray-700">Rp50.000</p>
-              </div>
-              <hr class="my-4" />
-              <div class="flex justify-between">
-                <p class="text-lg font-bold">Total</p>
-                <div class="">
-                  <p class="mb-1 text-lg font-bold">Rp1.450.000</p>
-                </div>
-              </div>
+
+            <div class="flex flex-wrap justify-end gap-4 mt-12">
               <button
-                class="mt-6 w-full rounded-md bg-blue-500 py-1.5 font-medium text-blue-50 hover:bg-blue-600"
+                type="button"
+                class="px-6 py-3 text-sm font-semibold tracking-wide bg-transparent border-2 text-gray-800 rounded-md hover:bg-gray-100"
               >
-                <a href="./checkout.html"> Check out</a>
+                Bayar sekarang
+              </button>
+              <button
+                type="button"
+                class="px-6 py-3 text-sm font-semibold tracking-wide bg-blue-600 text-white rounded-md hover:bg-blue-700"
+              >
+                Bayar nanti
               </button>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Comment Seciton End -->
+    </div>
+    <!-- Checkout Section End -->
     <!-- Footer Section Start -->
     <footer id="footer" class="bg-dark pt-24 pb-12">
       <div class="container">
